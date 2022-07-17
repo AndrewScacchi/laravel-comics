@@ -10,10 +10,10 @@
     <link rel="stylesheet" href="{{ asset('css/app.css')}}">
 </head>
 <body>
-    @include('partials._header')
+    @include('includes._header')
 
     @yield('pageMain')
 
-    @include('partials._footer')
+    @include('includes._footer')
 </body>
 </html>

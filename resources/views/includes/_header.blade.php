@@ -8,7 +8,7 @@
         </div>
 
         <!-- nav -->
-        <nav>
+        {{-- <nav>
           <a href="">CHARACTERS</a>
           <a href="">COMICS</a>
           <a href="">MOVIES</a>
@@ -19,6 +19,12 @@
           <a href="">FANS</a>
           <a href="">NEWS</a>
           <a href="">SHOP</a>
+        </nav> --}}
+        <nav>
+            @foreach (config('nav') as $navItem)
+                <a href="">{{ $navItem['navName'] }}</a>
+            @endforeach
+            {{-- @dd(config('nav')) --}}
         </nav>
       </div>
 </header>

@@ -6,6 +6,10 @@
 #app {
     font-family: 'Oswald', sans-serif;
 }
+#app {
+  font-family: "Oswald", sans-serif;
+}
+
 #header {
   z-index: 10;
   top: 0;
