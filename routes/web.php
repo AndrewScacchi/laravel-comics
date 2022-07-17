@@ -17,3 +17,20 @@ Route::get('/', function () {
     $comicsArr = config("comics");
     return view('home', ['comicsArr' => $comicsArr],);
 })->name('home');
+
+Route::get('/products/{id}', function ($id) {
+    $comic = null;
+    foreach (config('comics') as $value) {
+        if ($value['id'] == $id) {
+            $comic = $value;
+            break;
+        }
+    }
+    if ($comic) {
+        return view('products', [
+            'comic'     => $comic,
+        ]);
+    } else {
+        abort(404);
+    }
+})->name('product');

@@ -3,9 +3,142 @@
     padding: 0;
     box-sizing: border-box;
 }
-#app {
-    font-family: 'Oswald', sans-serif;
+#comicCard {
+  width: 100%;
 }
+
+#comicCard a {
+  text-decoration: none;
+}
+
+.comicCardMain {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  width: 70%;
+  display: flex;
+  margin: auto;
+  gap: 10px;
+  justify-content: space-between;
+}
+
+.comicCardMain .cardInfo {
+  position: relative;
+  width: 60%;
+}
+
+.comicCardMain .cardInfo .buyingInfo {
+  background-color: green;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.comicCardMain .cardInfo .buyingInfo div {
+  height: 100%;
+  padding: 0.5rem 1rem;
+  border: 1px solid black;
+  width: 70%;
+}
+
+.comicCardMain .cardInfo .buyingInfo .checkAvailable {
+  width: 30%;
+}
+
+.comicCardMain .cardInfo img {
+  position: absolute;
+  width: 150px;
+  top: -100%;
+}
+
+.comicCardMain .cardInfo h1 {
+  padding: 1rem 0;
+}
+
+.comicCardMain .cardInfo p {
+  margin: 0.5rem;
+}
+
+.comicCardMain .ads {
+  width: 40%;
+}
+
+.comicCardData {
+  background-color: #d1d1d1;
+  padding: 1rem 15%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.comicCardData .dataInner {
+  width: 50%;
+  padding: 0.5rem;
+}
+
+.comicCardData .dataInner h3 {
+  padding: 1rem 0.5rem;
+  border-bottom: 1px solid grey;
+}
+
+.comicCardData .dataInner li {
+  display: flex;
+  list-style: none;
+  padding: 0.5rem;
+  border-bottom: 1px solid grey;
+}
+
+.comicCardData .dataInner li span {
+  width: 30%;
+}
+
+.comicCardData .dataInner li span.right {
+  width: 70%;
+}
+
+.comicCardData .dataInner .authorWriter {
+  font-size: 0.8rem;
+}
+
+.blueBarTop {
+  content: "";
+  width: 100%;
+  height: 50px;
+  background-color: #0282f9;
+}
+
+#grey-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  /* debug */
+  border: 1px solid grey;
+  background-color: #cecece;
+  height: 80px;
+  padding: 0 15%;
+  color: grey;
+}
+
+#grey-bar .icons {
+  height: 100%;
+  width: 25%;
+  border-left: 1px solid grey;
+  border-right: 1px solid grey;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  gap: 5px;
+  font-size: 0.8em;
+  min-width: 150px;
+}
+
+#grey-bar img {
+  max-height: 30px;
+  max-width: 30px;
+}
+
 #app {
   font-family: "Oswald", sans-serif;
 }
@@ -106,8 +239,6 @@ h2 {
 
 .icons:hover {
   cursor: pointer;
-  font-size: 1.05em;
-  transform: scale(105%);
 }
 
 #footer {

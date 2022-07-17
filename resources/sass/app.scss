@@ -1,5 +1,128 @@
 //
-@import url(partial/_minimize.scss);
+@import url(partial/minimize.scss);
+
+// comicCard style (to put into partial)
+
+#comicCard {
+    width: 100%;
+    a {
+        text-decoration: none;
+    }
+}
+.comicCardMain{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    width: 70%;
+    display: flex;
+    margin: auto;
+    gap: 10px;
+    justify-content: space-between;
+    .cardInfo{
+        .buyingInfo{
+            background-color: green;
+            color: white;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            div {
+                height: 100%;
+                padding: 0.5rem 1rem;
+                border: 1px solid black;
+                width: 70%;
+            }
+            .checkAvailable{
+                width: 30%;
+            }
+        }
+
+        position: relative;
+        width: 60%;
+        img {
+            position: absolute;
+            width: 150px;
+            top: -100%;
+        }
+        h1{
+            padding: 1rem 0;
+        }
+        p {
+            margin: 0.5rem;
+        }
+    }
+    .ads {
+        width: 40%;
+
+    }
+}
+.comicCardData {
+    background-color: #d1d1d1;
+    padding: 1rem 15%;
+    display: flex;
+    justify-content: space-between;
+    .dataInner {
+        width: 50%;
+        padding: 0.5rem;
+
+        h3 {
+            padding: 1rem 0.5rem;
+            border-bottom: 1px solid grey;
+
+        }
+        li {
+            display: flex;
+            list-style: none;
+            padding: 0.5rem;
+            border-bottom: 1px solid grey;
+            span{
+                width: 30%;
+            }
+            span.right{
+                width: 70%;
+            }
+        }
+        .authorWriter {
+            font-size: 0.8rem;
+        }
+    }
+}
+.blueBarTop {
+    content: '';
+    width: 100%;
+    height: 50px;
+    background-color: #0282f9;
+}
+#grey-bar {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    /* debug */
+    border: 1px solid grey;
+    background-color: #cecece;
+    height: 80px;
+    padding: 0 15%;
+    color: grey;
+
+      .icons {
+        height: 100%;
+        width: 25%;
+        border-left: 1px solid grey;
+        border-right: 1px solid grey;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center ;
+        padding: 0.5rem 1rem;
+        gap: 5px;
+        font-size: 0.8em;
+        min-width: 150px;
+      }
+      img {
+        max-height: 30px;
+        max-width: 30px;
+      }
+    }
+
 
 // GENERAL
 #app {
@@ -103,8 +226,8 @@ h2 {
 }
 .icons:hover {
     cursor: pointer;
-    font-size: 1.05em;
-    transform: scale(105%);
+    // font-size: 1.05em;
+    // transform: scale(105%);
     }
 
 #footer{

@@ -2,8 +2,8 @@
     <div id="header">
         <!-- logo -->
         <div>
-          <a href="#" class="logo-main">
-            <img src="img/dc-logo.png" alt="logo">
+          <a href="/" class="logo-main">
+            <img src="/img/dc-logo.png" alt="logo">
           </a>
         </div>
 
