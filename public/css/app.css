@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#app {
+    font-family: 'Oswald', sans-serif;
+}
+#header {
+  z-index: 10;
+  top: 0;
+  background-color: white;
+  position: -webkit-sticky;
+  position: sticky;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 15%;
+}
+
+.logo-main img {
+  height: 75px;
+}
+
+nav a {
+  display: inline-block;
+  text-decoration: none;
+  color: #303030;
+  margin-right: 10px;
+  height: 100px;
+  line-height: 100px;
+}
+
+nav a:hover {
+  color: #0282f9;
+  border-bottom: 5px solid #0282f9;
+}
+
+h2 {
+  color: white;
+}
+
+#jumbo {
+  height: 300px;
+  background-image: url("/img/jumbotron.jpg");
+  background-size: cover;
+}
+
+#content {
+  background-color: black;
+  margin: 0 auto;
+}
+
+#content .comix {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: space-between;
+}
+
+.comic {
+  margin: 10px;
+  width: 14%;
+}
+
+.comic img {
+  width: 100%;
+}
+
+.comic h5 {
+  color: white;
+}
+
+#blue-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  /* debug */
+  background-color: #0282f9;
+  height: 100px;
+  padding: 15px 15%;
+  color: white;
+}
+
+#blue-bar .icons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+  font-size: 0.8em;
+  min-width: 150px;
+}
+
+#blue-bar img {
+  max-height: 40px;
+  max-width: 40px;
+}
+
+.icons:hover {
+  cursor: pointer;
+  font-size: 1.05em;
+  transform: scale(105%);
+}
+
+#footer {
+  background: url(/img/dc-logo-bg.png), url(/img/footer-bg.jpg);
+  background-repeat: no-repeat;
+  background-position-x: right;
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+}
+
+#footer-main {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: left;
+  flex-wrap: wrap;
+  padding: 15px 15%;
+  height: 250px;
+  width: 50%;
+}
+
+#footer-main ul li {
+  list-style: none;
+  font-size: 0.65em;
+  font-weight: lighter;
+}
+
+#footer-main .li-title {
+  font-weight: bold;
+  font-size: 1em;
+  padding: 0.5em 0;
+}
+
+#footer-bottom {
+  margin-top: auto;
+  background-color: #303030;
+  width: 100%;
+  min-height: 100px;
+  padding: 15px 15%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#footer-bottom div {
+  color: #0282f9;
+}
+
+#footer-social {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#footer-social a {
+  display: inline-block;
+  margin: 5px;
+  width: 25px;
+}
+
+.btn {
+  border: 1px solid #0282f9;
+  background-color: #303030;
+  color: white;
+  padding: 0.5em;
+  font-size: 0.9em;
+}
+
+.btn:hover {
+  border-color: white;
+  background-color: #0282f9;
+  cursor: pointer;
+}
+
